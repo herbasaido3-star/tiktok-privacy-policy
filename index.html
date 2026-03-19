@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saidos Workflow - TikTok Automation Bridge</title>
-    <meta name="description" content="Saidos Workflow is a professional automation tool and premium bridge for TikTok content creators and agencies, seamlessly connecting Google Sheets and TikTok Publishing.">
-    <meta name="keywords" content="TikTok automation, content creation, social media scheduling, Google Sheets to TikTok, n8n, API integration, Saidos Workflow, creators agency tool">
+    <title>Saidos Workflow | Professional TikTok Automation Bridge</title>
+    
+    <meta name="description" content="Saidos Workflow is a professional automation tool and premium bridge for TikTok content creators and agencies, connecting Google Sheets and TikTok Publishing.">
+    <meta name="keywords" content="TikTok automation, content creation, social media scheduling, Google Sheets to TikTok, n8n integration, Saidos Workflow, creator tools">
+
     <style>
-        /* CSS Stile basierend auf image_10.png */
         :root {
-            --primary-color: #ee1d52; /* TikTok Rot */
+            --primary-color: #ee1d52; /* TikTok Red */
+            --bg-color: #f4f4f4;
+            --card-bg: #ffffff;
             --text-color: #333;
-            --background-color: #f4f4f4;
-            --card-background: #ffffff;
             --muted-text: #888;
         }
 
@@ -26,18 +27,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: var(--background-color);
-            padding: 0;
-            margin: 0;
+            background-color: var(--bg-color);
         }
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header (Roter Bereich) */
+        /* Hero Section */
         header {
             background-color: var(--primary-color);
             color: white;
@@ -48,89 +41,93 @@
 
         header h1 {
             font-size: 3rem;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         header p {
             font-size: 1.25rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             opacity: 0.9;
         }
 
-        header a.button {
+        .btn-dashboard {
             display: inline-block;
             background-color: white;
             color: var(--primary-color);
-            padding: 12px 24px;
+            padding: 12px 28px;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
+            transition: 0.3s;
         }
 
-        header a.button:hover {
+        .btn-dashboard:hover {
             background-color: #f0f0f0;
+            transform: translateY(-2px);
         }
 
-        /* Karten / Abschnitte */
-        main section {
-            background-color: var(--card-background);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 40px;
+        }
+
+        /* Section Cards */
+        section {
+            background-color: var(--card-bg);
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
             margin-bottom: 30px;
         }
 
-        main h2 {
-            font-size: 1.5rem;
+        h2 {
+            font-size: 1.4rem;
             color: var(--primary-color);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        main h3 {
-            font-size: 1.2rem;
+        h3 {
+            font-size: 1.1rem;
             margin-top: 20px;
             margin-bottom: 10px;
         }
 
-        main p {
-            margin-bottom: 15px;
-        }
-
-        /* Quick Access Links */
-        .quick-access ul {
+        /* Quick Access List Layout */
+        .quick-access-list {
             list-style: none;
         }
 
-        .quick-access li {
-            margin-bottom: 10px;
+        .quick-access-list li {
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
+            font-size: 1.1rem;
         }
 
-        .quick-access li span.lang {
+        .lang-tag {
             color: var(--muted-text);
-            font-size: 0.9rem;
-            margin-right: 10px;
-            width: 35px; /* Fester Abstand für Labels */
-            text-align: right;
+            font-size: 0.85rem;
+            font-weight: bold;
+            width: 40px;
+            display: inline-block;
         }
 
-        .quick-access li a {
+        .quick-access-list a {
             color: var(--primary-color);
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
 
-        .quick-access li a:hover {
+        .quick-access-list a:hover {
             text-decoration: underline;
         }
 
-        /* Footer */
         footer {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
             color: var(--muted-text);
             font-size: 0.9rem;
         }
@@ -139,34 +136,36 @@
 <body>
 
     <header>
-        <div class="container">
-            <h1>Saidos Workflow</h1>
-            <p>The Premium Bridge for TikTok Content Creators</p>
-            <p>Seamlessly automate your content pipeline from data to publication.</p>
-            <a href="https://n8n.saidos-workflow.org" class="button">Access Dashboard</a>
-        </div>
+        <h1>Saidos Workflow</h1>
+        <p>The Premium Bridge for TikTok Content Creators</p>
+        <p>Automate your content pipeline from Google Sheets to TikTok.</p>
+        <a href="https://n8n.saidos-workflow.org" class="btn-dashboard">Access Dashboard</a>
     </header>
 
     <main class="container">
-        <section class="quick-access">
+        <section>
             <h2>QUICK ACCESS / LEGAL DOCUMENTS:</h2>
-            <ul>
+            <ul class="quick-access-list">
                 <li>
-                    <span class="lang">(EN)</span>
-                    <a href="EN_Social_Media_privacy-en.html" target="_blank">Privacy Policy</a>
+                    <span class="lang-tag">EN</span>
+                    <a href="EN_Social_Media_privacy-en.html">Privacy Policy</a>
                 </li>
                 <li>
-                    <span class="lang">(EN)</span>
-                    <a href="English-tiktok-terms-of-service.html" target="_blank">Terms of Service</a>
+                    <span class="lang-tag">EN</span>
+                    <a href="English-tiktok-terms-of-service.html">Terms of Service</a>
                 </li>
                 <li>
-                    <span class="lang">(DE)</span>
-                    <a href="deutsch-agb-und-nutzungsbedingungen.html" target="_blank">Rechtliche Hinweise & Impressum</a>
+                    <span class="lang-tag">DE</span>
+                    <a href="datenschutz-und-impressum.html">Datenschutz & Impressum</a>
+                </li>
+                <li>
+                    <span class="lang-tag">DE</span>
+                    <a href="deutsch-agb-und-nutzungsbedingungen.html">AGB & Nutzungsbedingungen</a>
                 </li>
             </ul>
         </section>
 
-        <section class="overview">
+        <section>
             <h2>Privacy & Terms Overview</h2>
             <p>At Saidos Workflow, data protection and transparency are our highest priorities. This application is a professional tool designed to help creators and agencies manage their TikTok presence efficiently and securely.</p>
 
@@ -176,22 +175,18 @@
             <h3>2. Controller Information</h3>
             <p>
                 <strong>Saidos Workflow</strong><br>
-                Idsteiner Straße 19<br>
-                57074 Siegen, Germany<br>
-                <strong>Phone:</strong> +4915678357336<br>
-                <strong>Email:</strong> herbasaido3@gmail.com<br>
-                <strong>Official Website:</strong> https://herbasaido3-star.github.io/tiktok-privacy-policy/
+                Idsteiner Straße 19, 57074 Siegen, Germany<br>
+                Email: herbasaido3@gmail.com<br>
+                Support: +4915678357336
             </p>
 
-            <h3>3. Data Processing</h3>
-            <p>We only process the data necessary for authentication and content scheduling via TikTok's official Login Kit and Content Posting API. No data is shared with third parties without explicit consent.</p>
+            <h3>3. Data Security</h3>
+            <p>We utilize TikTok's official Login Kit and Content Posting API. User data is only processed for the purpose of automation and is never shared with third parties without explicit consent.</p>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>© 2026 Saidos Workflow. All rights reserved. Professional Automation Solutions.</p>
-        </div>
+        <p>© 2026 Saidos Workflow. All rights reserved. | Professional Automation Solutions.</p>
     </footer>
 
 </body>
