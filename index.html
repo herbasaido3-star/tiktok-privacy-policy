@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saidos Workflow | Professional TikTok Automation Bridge</title>
+    <title>Saidos Workflow | Social Media Automation & Content Posting</title>
     
-    <meta name="description" content="Saidos Workflow is a professional automation tool and premium bridge for TikTok content creators and agencies, connecting Google Sheets and TikTok Publishing.">
-    <meta name="keywords" content="TikTok automation, content creation, social media scheduling, Google Sheets to TikTok, n8n integration, Saidos Workflow, creator tools">
+    <meta name="description" content="Saidos Workflow is a professional social media automation tool for content creators and agencies. Connecting Meta Graph API, YouTube Data API, TikTok API and more.">
+    <meta name="keywords" content="Social Media Automation, Meta Graph API, Facebook API, Instagram Graph API, YouTube Data API, TikTok API, LinkedIn API, content posting, Saidos Workflow, creator tools, GDPR">
 
     <style>
         :root {
-            --primary-color: #ee1d52; /* TikTok Red */
+            --primary-color: #ee1d52;
             --bg-color: #f4f4f4;
             --card-bg: #ffffff;
             --text-color: #333;
@@ -30,7 +30,6 @@
             background-color: var(--bg-color);
         }
 
-        /* Hero Section */
         header {
             background-color: var(--primary-color);
             color: white;
@@ -72,7 +71,6 @@
             padding: 0 20px 40px;
         }
 
-        /* Section Cards */
         section {
             background-color: var(--card-bg);
             padding: 35px;
@@ -95,7 +93,6 @@
             margin-bottom: 10px;
         }
 
-        /* Quick Access List Layout */
         .quick-access-list {
             list-style: none;
         }
@@ -125,6 +122,31 @@
             text-decoration: underline;
         }
 
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .platform-badge {
+            background: #fff5f7;
+            border: 1px solid #f0c0cc;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .platform-badge span {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--muted-text);
+            font-weight: normal;
+            margin-top: 2px;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -137,12 +159,13 @@
 
     <header>
         <h1>Saidos Workflow</h1>
-        <p>The Premium Bridge for TikTok Content Creators</p>
-        <p>Automate your content pipeline from Google Sheets to TikTok.</p>
+        <p>Professional Social Media Automation & Content Posting</p>
+        <p>Meta Graph API · YouTube Data API · TikTok · LinkedIn · Pinterest · X</p>
         <a href="https://n8n.saidos-workflow.org" class="btn-dashboard">Access Dashboard</a>
     </header>
 
     <main class="container">
+
         <section>
             <h2>QUICK ACCESS / LEGAL DOCUMENTS:</h2>
             <ul class="quick-access-list">
@@ -152,7 +175,7 @@
                 </li>
                 <li>
                     <span class="lang-tag">EN</span>
-                    <a href="English-tiktok-terms-of-service.html">Terms of Service</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
                 </li>
                 <li>
                     <span class="lang-tag">DE</span>
@@ -160,33 +183,77 @@
                 </li>
                 <li>
                     <span class="lang-tag">DE</span>
-                    <a href="deutsch-agb-und-nutzungsbedingungen.html">AGB & Nutzungsbedingungen</a>
+                    <a href="agb-und-nutzungsbedingungen.html">AGB & Nutzungsbedingungen</a>
                 </li>
             </ul>
         </section>
 
         <section>
+            <h2>Supported Platforms & APIs</h2>
+            <p>Saidos Workflow connects to the official APIs of the following social media platforms for automated content posting:</p>
+            <div class="platform-grid">
+                <div class="platform-badge">
+                    Meta Graph API
+                    <span>Facebook & Instagram</span>
+                </div>
+                <div class="platform-badge">
+                    YouTube Data API v3
+                    <span>Google LLC</span>
+                </div>
+                <div class="platform-badge">
+                    TikTok API
+                    <span>Content Posting</span>
+                </div>
+                <div class="platform-badge">
+                    LinkedIn API
+                    <span>Pages & Profiles</span>
+                </div>
+                <div class="platform-badge">
+                    Pinterest API
+                    <span>Pins & Boards</span>
+                </div>
+                <div class="platform-badge">
+                    X (Twitter) API
+                    <span>Posts & Threads</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <h2>Privacy & Terms Overview</h2>
-            <p>At Saidos Workflow, data protection and transparency are our highest priorities. This application is a professional tool designed to help creators and agencies manage their TikTok presence efficiently and securely.</p>
+            <p>At Saidos Workflow, data protection and transparency are our highest priorities. This application is a professional tool designed to help creators and agencies manage their social media presence efficiently and securely across all major platforms.</p>
 
             <h3>1. Professional Use Case</h3>
-            <p>Saidos Workflow provides an automated bridge for professional content management. We strictly follow TikTok's API guidelines to ensure a safe and transparent environment for our users.</p>
+            <p>Saidos Workflow provides an automated content posting bridge for professional social media management. We strictly follow the API guidelines of all connected platforms — including the <strong>Meta Platform Terms</strong>, <strong>YouTube API Services Terms of Service</strong>, and TikTok Developer Terms — to ensure a safe and transparent environment for our users.</p>
 
-            <h3>2. Controller Information</h3>
+            <h3>2. Meta Graph API (Facebook & Instagram)</h3>
+            <p>We integrate the <strong>Meta Graph API</strong> to publish content to Facebook Pages and Instagram Business accounts on your behalf. We request only the minimum necessary permissions: <strong>pages_manage_posts</strong>, <strong>instagram_content_publish</strong>, and <strong>pages_read_engagement</strong>. We do not access your personal profile, friends list, or private messages. Access tokens are encrypted and never shared with third parties.</p>
+
+            <h3>3. YouTube Data API v3</h3>
+            <p>We integrate the <strong>YouTube Data API v3</strong> (provided by Google LLC) for automated video uploads and channel management. By using this feature, you also agree to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Google Privacy Policy</a>. You can revoke access at any time via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color);">Google Security Settings</a>.</p>
+
+            <h3>4. TikTok, LinkedIn, Pinterest & X (Twitter)</h3>
+            <p>Our service may additionally connect to TikTok, LinkedIn, Pinterest, and X (Twitter) APIs for content posting. For each platform, we request only the minimum permissions required. Access tokens are stored securely and encrypted, and are never sold or shared with third parties.</p>
+
+            <h3>5. Controller Information</h3>
             <p>
                 <strong>Saidos Workflow</strong><br>
                 Idsteiner Straße 19, 57074 Siegen, Germany<br>
-                Email: herbasaido3@gmail.com<br>
+                Email: <a href="mailto:herbasaido3@gmail.com" style="color: var(--primary-color);">herbasaido3@gmail.com</a><br>
                 Support: +4915678357336
             </p>
 
-            <h3>3. Data Security</h3>
-            <p>We utilize TikTok's official Login Kit and Content Posting API. User data is only processed for the purpose of automation and is never shared with third parties without explicit consent.</p>
+            <h3>6. Data Security & GDPR</h3>
+            <p>We utilize only the official APIs of all connected platforms. User data is processed exclusively for the purpose of content posting automation and is never shared with third parties without explicit consent. All processing is carried out in accordance with the <strong>EU General Data Protection Regulation (GDPR)</strong>. For the full privacy policy, see: <a href="EN_Social_Media_privacy-en.html" style="color: var(--primary-color);">Privacy Policy (EN)</a> · <a href="datenschutz-und-impressum.html" style="color: var(--primary-color);">Datenschutzerklärung (DE)</a>.</p>
+
+            <h3>7. Data Deletion</h3>
+            <p>You can request deletion of your data at any time by contacting us at <a href="mailto:herbasaido3@gmail.com" style="color: var(--primary-color);">herbasaido3@gmail.com</a>. You can also revoke platform access directly in the settings of each connected social media platform.</p>
         </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Saidos Workflow. All rights reserved. | Professional Automation Solutions.</p>
+        <p>© 2026 Saidos Workflow. All rights reserved. | Professional Social Media Automation Solutions.</p>
     </footer>
 
 </body>
